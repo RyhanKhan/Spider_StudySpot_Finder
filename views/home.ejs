@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Locate Your StudySpot</h1>
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="buildingName" class="form-label">Enter Building Name</label>
+    <input
+      name="buildingName"
+      class="form-control"
+      list="datalistOptions"
+      id="exampleDataList"
+      placeholder="Select any given building"
+    />
+    <datalist id="datalistOptions">
+      <option value="Orion"></option>
+      <option value="LHC"></option>
+      <option value="Library (NIT Trichy)"></option>
+      <option value="Library (NIT Srinagar)"></option>
+      <option value="Octagon"></option>
+    </datalist>
+  </div>
+
+  <button type="submit" name="button" class="btn btn-primary">
+    Get Real-Time Data
+  </button>
+</form>
+
+<%- include("partials/footer.ejs") %>

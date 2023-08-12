@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Messages</h1>
+
+<% ourComments.forEach(comment => { %>
+    <h3><%= comment.ourUserName %>, <%= comment.ourUserBuilding %> Room</h3>
+    
+    
+    <p>
+      <%= comment.ourUserComment %>
+    
+    </p>
+    
+    <% }); %>
+
+<%- include("partials/footer.ejs") %>
